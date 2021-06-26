@@ -1,8 +1,6 @@
-import './App.css';
-import {Billing , MenuOptions}from './Components-Billing-Menu.js';
-import logo from'./logoCT.png';
-
-
+import Billing from './Billing.js';
+import  MenuOptions from './MenuOptions';
+import logo from'../assets/logoCT.png';
 
  const Header = () => {
   return (

@@ -1,7 +1,10 @@
 import React, {Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import  {Header, Menu} from './Components';
+import './styles/index.css';
+import  {Header, Menu} from './components/Components';
+
+
+
 
 // import reportWebVitals from './reportWebVitals';
 

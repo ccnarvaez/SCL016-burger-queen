@@ -1,9 +1,9 @@
-# Burger Queen
+# La casa del té
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
+* [1. Este proyecto](#1-este-proyecto)
+* [2. Este proyecto](#2-este-proyecto)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
@@ -11,28 +11,10 @@
 
 ***
 
-## 1. Preámbulo
-
-[React](https://es.reactjs.org/) y [Angular](https://angular.io/)
-son algunos de los _frameworks_ y _librerías_ de JavaScript más utilizados por
-lxs desarrolladorxs alrededor del mundo, y hay una razón para eso.
-En el contexto del navegador, [_mantener la interfaz sincronizada con el estado
-es difícil_](https://medium.com/dailyjs/the-deepest-reason-why-modern-javascript-frameworks-exist-933b86ebc445).
-Al elegir un _framework_ o _librería_ para nuestra interfaz, nos apoyamos en una
-serie de convenciones e implementaciones _probadas_ y _documentadas_ para
-resolver un problema común a toda interfaz web. Esto nos permite concentrarnos
-mejor (dedicar más tiempo) en las caractrísticas _específicas_ de
-nuestra aplicación.
-
-Cuando elegimos una de estas tecnologías no solo importamos un pedacito de
-código para reusarlo (lo cuál es un gran valor per se), si no que adoptamos una
-**arquitectura**, una serie de **principios de diseño**, un **paradigma**, unas
-**abstracciones**, un **vocabulario**, una **comunidad**, etc...
-
-Como desarrolladora Front-end, estos kits de desarrollo pueden resultarte
-de gran ayuda para implementar rápidamente características de los proyectos en
-los que trabajes.
-
+## 1. Este proyecto
+A todos nos agrada pasar un buen rato sen un restaurant, compartiendo con amigos una buena comida. Si pensamos un poco en el trasfondo, y en todas las actividades que deben desarrollarse en simultáneo para que pueda concretarse ese momento especial, es probable que nuestra percepción se viera bastante alterada.
+Aprender React mediante el desarrollo de una app que simplifique la comunicación entre garzones y el área de cocina de un restaurante es el tema central de este desarrollo.
+Se diseñó una app pensanda en una solución para un local donde se venden té y ricos postres, llamado "La casa del te", por lo que se plantea que el mismo sea empleado por garzones (o por los clientes), para generar un pedido, el cual será enviado a cocina para su preparación, luego de hacer click en "confirmar"
 ## 2. Resumen del proyecto
 
 Esta vez tenemos un proyecto 100% por encargo. Si bien siempre puedes (y debes)
