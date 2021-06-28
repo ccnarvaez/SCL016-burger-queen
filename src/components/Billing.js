@@ -13,11 +13,9 @@ const Billing = () => {
       <div className ="billing-container">
           <div className= "billing-white">
             <div className ="billing-items">
-                <div > Item 
+                <div > Producto
                   <div id="billing-items"></div>
                 </div>
-                <div> Cantidad </div>
-                <div> Precio </div>
             </div>
             <div className="billing-rederence-btn">
               <button className = "header-three"> Confirmar Pedido </button>
