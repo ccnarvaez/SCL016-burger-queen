@@ -27,7 +27,8 @@ const Food= () =>{
                 <div className ="drinks-food-menu">
                   <div className = "drink-menu-options" >
                     <div key={index} > 
-                      <h3 > {chunk.item} Costo : {chunk.price} US </h3>
+                      <h3 > Item: {chunk.item} </h3>
+                      <h3 > Costo : {chunk.price} $ </h3>
                       <button type= "button"className = "header-three" onClick ={addingFood} data-id={chunk.id} data-item={chunk.item} data-price={chunk.price}> Agregar </button>
                     </div>  
                    

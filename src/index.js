@@ -1,7 +1,9 @@
 import React, {Component } from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
+// import './assets/data/firebase';
 import  {Header, Menu} from './components/Components';
+
 
 
 
