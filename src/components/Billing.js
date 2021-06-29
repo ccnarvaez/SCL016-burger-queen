@@ -21,7 +21,7 @@ const Billing = () => {
             <div id= "items-order"> </div>
 
             <div className="billing-rederence-btn">
-              <button className = "header-three"> Confirmar Pedido </button>
+              <button className = "header-three" > Confirmar Pedido </button>
             </div>
         </div>
       </div>

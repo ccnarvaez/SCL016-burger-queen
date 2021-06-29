@@ -1,5 +1,5 @@
 import data from '../assets/data/data';
-import AddFood from './AddFood';
+import {AddFood}from './AddFood';
 import ReactDOM from 'react-dom';
 
 

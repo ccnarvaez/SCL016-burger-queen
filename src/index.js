@@ -2,7 +2,8 @@ import React, {Component } from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
 import  {Header, Menu} from './components/Components';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 
 // Render app
 class Index extends Component {
@@ -11,6 +12,7 @@ class Index extends Component {
       <div>
         <Header />
         <Menu />  
+      
       </div>
     );
   }
@@ -31,26 +33,13 @@ var firebaseConfig = {
   measurementId: "G-Q4CBRE3XX2"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+const fb = firebase.initializeApp(firebaseConfig);
+export const db = fb.firestore();
+
 
 
 
 // import reportWebVitals from './reportWebVitals';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Default 
 // ReactDOM.render(
 //   <React.StrictMode>
