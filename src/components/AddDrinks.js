@@ -5,21 +5,21 @@ const Quantity = async (props) =>{
 const item = document.getElementById('item-item').textContent;
 const quantity = document.getElementById('item-quantity').value;
 const price = document.getElementById('item-price').textContent;
-const payment = parseInt(price) * parseInt(document.getElementById('item-quantity').value);
+const amount = parseInt(price) * parseInt(document.getElementById('item-quantity').value);
 
     return(
         await db.collection('Order').doc().set({
             item,
             quantity,
             price,
-            payment
+            amount
           }).then(alert('Order going up!'))
         
     )
 }
 
 
-const AddFood = (props) => {
+const AddDrinks = (props) => {
     
     return (
         <>
@@ -31,4 +31,4 @@ const AddFood = (props) => {
     )
 }
 
-export  default AddFood;
+export  default AddDrinks;

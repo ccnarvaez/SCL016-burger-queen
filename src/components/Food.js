@@ -1,5 +1,5 @@
 import data from '../assets/data/data';
-import {AddFood}from './AddFood';
+import AddFood from './AddFood';
 import ReactDOM from 'react-dom';
 
 
@@ -26,6 +26,7 @@ const Food= () =>{
           
                 <div className ="drinks-food-menu">
                   <div className = "drink-menu-options" >
+
                     <div key={index} > 
                       <h3 > Item: {chunk.item} </h3>
                       <h3 > Costo : {chunk.price} $ </h3>
