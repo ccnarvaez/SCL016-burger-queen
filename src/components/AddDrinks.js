@@ -25,8 +25,8 @@ const AddDrinks = (props) => {
         <>
             <h4 id = "item-item"> {props.item} </h4>
             <h4 id = "item-price">  {props.price}  </h4>
-            <input type="text" placeholder="Ingrese cantidad" id="item-quantity" className = "header-name"></input>
-            <button type="button" className = "header-three" onClick={ Quantity } data-id={props.id} data-item={props.item} data-price={props.price}> OK </button>
+            <input type="text" placeholder="Ingrese cantidad" id="item-quantity"></input>
+            <button type="button"  className = "btn-gen" onClick={ Quantity } data-id={props.id} data-item={props.item} data-price={props.price}> OK </button>
         </>   
     )
 }

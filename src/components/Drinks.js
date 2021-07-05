@@ -16,22 +16,18 @@ const Drinks= () =>{
     return (
         <>
             <div className ="drinks-food-menu">
-                <h1> Menu de Bebidas </h1>
+                <h4> Menu de Bebidas </h4>
             </div>
             {drinks.map((chunk, index) => {
                 return (
                   
                   <div className ="drinks-food-menu">
-                    <div className = "drink-menu-options" >
-
-                      <div key={index} > 
-                        <h3> {chunk.item} </h3> 
-                        <h3> {chunk.price} </h3> 
-                        <button type= "button"className = "header-three" onClick ={addingDrinks} data-id={chunk.id} data-item={chunk.item} data-price={chunk.price}> Agregar </button>
-                      </div>  
-                    
-                      
-                      
+                    <div className = "drink-menu-options">
+                      <ul key={index} > 
+                        <li> Item: {chunk.item} </li> 
+                        <li> Costo: {chunk.price} $ </li> 
+                        <button type= "button" className = "btn-gen" onClick ={addingDrinks} data-id={chunk.id} data-item={chunk.item} data-price={chunk.price}> Agregar </button>
+                      </ul>  
                     </div>
                   </div>
             
