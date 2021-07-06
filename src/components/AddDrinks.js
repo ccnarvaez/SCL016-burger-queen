@@ -25,7 +25,7 @@ const AddDrinks = (props) => {
         <>
             <h4 id = "item-item"> {props.item} </h4>
             <h4 id = "item-price">  {props.price}  </h4>
-            <input type="text" placeholder="Ingrese cantidad" id="item-quantity"></input>
+            <input type="text" placeholder="Ingrese cantidad" id="item-quantity" className= "input-gen"></input>
             <button type="button"  className = "btn-gen" onClick={ Quantity } data-id={props.id} data-item={props.item} data-price={props.price}> OK </button>
         </>   
     )

@@ -2,18 +2,17 @@ import data from '../assets/data/data';
 import AddFood from './AddFood';
 import ReactDOM from 'react-dom';
 
+const addingFood = (e) => {
+   
+  return (
+    ReactDOM.render (
+    <AddFood id={e.target.dataset.id} item={e.target.dataset.item} price={e.target.dataset.price}/>, document.getElementById('billing-items'))
+  )
+}
 
 const Food= () =>{
     
     const food = data.filter((chunk) =>{return chunk.menu === 'food'})
-    const addingFood = (e) => {
-   
-        return (
-          ReactDOM.render (
-          <AddFood id={e.target.dataset.id} item={e.target.dataset.item} price={e.target.dataset.price}/>, document.getElementById('billing-items'))
-        )
-    }
-    
     
     return (
         <>

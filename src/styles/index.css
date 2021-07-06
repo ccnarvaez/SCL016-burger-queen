@@ -127,6 +127,13 @@ code {
   padding: 2em;
 }
 
+.input-gen {
+  border: 0em;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  height: 1.5em;
+}
+
 .menu-container2 {
   background-color: white;
   border-radius: 0.5em;
