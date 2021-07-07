@@ -32,11 +32,11 @@ const AddDrinks = (props) => {
     
     return (
         <>   
-            {order.map((props) =>{
+            {order.map((props, index) =>{
                 return(
                     <>
                         <ul>
-                            <li key={props.id} id = "item-item">{props.item} 
+                            <li key={index} id = "item-item">{props.item} 
                                 <ul id = "item-price">  <label> Precio: </label> {props.price} <label>$</label> </ul>
                                 <ul id = "item-quantity">  <label> Cantidad: </label> {props.quantity} </ul>
                             </li>   

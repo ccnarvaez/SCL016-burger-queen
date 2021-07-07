@@ -4,8 +4,6 @@ import Body from './Components';
 import React, { useState, useEffect } from 'react';
 
 
-
-
 const Kitchen = () => {
     let [orders, setOrders] = useState([]); 
     useEffect(() => {
@@ -19,22 +17,28 @@ const Kitchen = () => {
     return(
         <>
             <h1> Bienvenido a la cocina!</h1>
-            <h3> Aqui se muestran las ordenes</h3>
+           
             <ol> 
+            <h3> Aqui se muestran las ordenes</h3>
             {orders.map((order, item)=> {
-                    return(
-                        <>
-                            <li key={order.id}> {order.item} 
-                                <ul> <label> Precio: </label> {order.price} <label> $ </label> </ul>
-                                <ul> <label> Cantidad: </label> {order.quantity} </ul>
-                                {/* <ul> <label> Total: </label> {(order.price)*(order.quantity)} <label> $ </label> </ul> */}
-                            </li>   
-                        </>
-                    )
+                return(
+                    <>
+                        <div className ="drinks-food-menu">
+                            <div className = "drink-menu-options">
+                                <ul key={order.id}> {order.item} 
+                                    <li> <label> Precio: </label> {order.price} <label> $ </label> </li>
+                                    <li> <label> Cantidad: </label> {order.quantity} </li>
+                                    {/* <li> <label> Total: </label> {(order.price)*(order.quantity)} <label> $ </label> </li> */}
+                                </ul>
+                            </div> 
+                        </div>
+                    </>
+                )
                 })} 
+                <button className = "header-three" onClick= {KitchenBack}> Volver </button>
             </ol>
             
-            <button className = "btn-gen" onClick= {KitchenBack}> Volver </button>
+            
         </>
     )
 }
