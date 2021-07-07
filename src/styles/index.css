@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #00C3AC;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.billing-container {
+  background-color: white;
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  width: max-content;
+}
+
+.billing-green-label {
+  background-color:white;
+  border: 2px solid #d4dfdd;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.billing-items {
+  background-color: #D3E7DF;
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr;
+  margin: 1em;
+  font-weight: bold;
+}
+
+
+.billing-space {
+  grid-column: 3;
+  grid-row: 1;
+  /* grid-column: inherit; */
+  height: max-content;
+  border-radius: 0.5em;
+  margin-top: 2em;
+}
+
+.billing-white {
+  background-color: white;
+  border: 2px solid #d4dfdd;
+  height: inherit;
+  width: fit-content;
+}
+
+.btn-gen {
+  background-color: #065C4D;
+  color: white;
+  padding: 0.3em;
+  border-radius: 0.5em;
+  border: 0em;
+}
+
+.drink-menu-options {
+  background-color: #C5F4E1;
+  display: grid;
+  grid-template-columns: 3;
+  height: max-content;
+  width: inherit;
+}
+
+
+.drinks-food-menu {
+  background-color: white;
+  border-radius: 0.5em;
+  height: max-content;
+  width: inherit;
+  padding: 0.5em;
+  margin: 1em;
+  position: relative;
+
+}
+
+.general-green-label {
+  display: flex;
+  justify-content: center;
+  background-color: #57E4AB;
+  margin: 0.5em;
+  font-weight: 500;
+  border-radius: 0.5em;
+  grid-column: 2;
+}
+
+.header-container {
+  background-color: #065C4D;
+  display: grid;
+  grid-template-columns: 2(repeat, 1fr);
+  height: fit-content;
+
+}
+
+.header-one {
+  grid-column: 1;
+  height: 10em;
+  border-radius: 0.5em;
+}
+
+.header-three {
+  background-color: #EEA550;
+  border: 0em;
+  border-radius: 0.5em;
+  font-weight: bolder;
+  font-size: 0.88em;
+  grid-column: 3;
+  height: max-content;
+  line-height: 3em;
+  margin-bottom: 4em;
+  width: inherit;
+}
+
+.header-wrapper {
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2em;
+}
+
+.input-gen {
+  border: 0em;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  height: 1.5em;
+}
+
+.menu-container2 {
+  background-color: white;
+  border-radius: 0.5em;
+  display: flex;
+  height: min-content;
+  width: min-content;
+  margin: 1em;
+  grid-column: 1;
+}
+
+.menu-global {
+  display: grid;
+  grid-template-columns: 3(repeat, 1fr);
+  margin: 1em;
+  justify-content: space-around;
+}
+
+
+.menu-one {
+  grid-column: 1;
+  grid-row: 1;
+  height: 7em;
+  width: 9em;
+  margin: 0em;
+  border-radius: 0.5em;
+}
+
+.menu-options1 {
+  background-color: #065C4D;
+  border: 0em;
+  border-radius: 0.5em;
+  color: white;
+  display: flex;
+  font-weight: bolder;
+  font-size: 1em;
+  height: max-content;
+  justify-content: center;
+  line-height: 2em;
+  width: inherit;
+}
+
+.menu-two {
+  grid-column: 2;
+  grid-row: 1;
+  height: 7em;
+  width: 9em;
+  margin: 0em;
+  border-radius: 0.5em;
+}
+
+.menu-wrapper {
+  background-color: #065C4D;
+  height: fit-content;
+  width: min-content;
+  margin: 1em;
+  border-radius: 0.5em;
+}
+
+.section-wrapper{
+  background-color:#0df7d0;
+  padding: 0.3em;
+  height: max-content;
+}
