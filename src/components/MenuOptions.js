@@ -27,13 +27,13 @@ const MenuOptions = () => {
       </div>
       <div className = "menu-container2">
         <div className = "menu-wrapper">
-          <img src={taza} alt ="bebidas"className="menu-one" id="menu-one"></img>
+          <img className="menu-one" src={taza} alt ="bebidas"id="menu-one"></img>
           <button className = "menu-options1" onClick={showMenu1} > Bebidas </button>
         </div>
         </div>
         <div className = "menu-container2">
         <div className = "menu-wrapper">
-          <img src={postres} alt ="acompañantes"className="menu-two"></img>
+          <img className="menu-two" src={postres} alt ="acompañantes"></img>
           <button className ="menu-options1" onClick={showMenu2}> Acompañantes </button>
         </div>
       </div>

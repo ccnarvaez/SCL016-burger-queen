@@ -12,7 +12,7 @@ const Pay = async () => {
     });
 
     batch.commit();
-    console.log('enviado a firebase');
+    alert('enviado a firebase');
 }
 
 const AddFood = (props) => {
@@ -30,7 +30,6 @@ const AddFood = (props) => {
         order.push(item);
     }
    
-    console.log(order);   
     return (
         <>
           
@@ -39,7 +38,7 @@ const AddFood = (props) => {
                 return(
                     <>
                         <ul>
-                            <li id = "item-item">{props.item} 
+                            <li key={props.id} id = "item-item">{props.item} 
                                 <ul id = "item-price">  <label> Precio: </label> {props.price} <label>$</label> </ul>
                                 <ul id = "item-quantity">  <label> Cantidad: </label> {props.quantity} </ul>
                             </li>
