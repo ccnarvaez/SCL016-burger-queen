@@ -1,24 +1,13 @@
-import React, {Component } from 'react';
+import React  from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
-import  {Header, Menu} from './components/Components';
+import  Body from './components/Components';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
 // Render app
-class Index extends Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <Menu />  
-      
-      </div>
-    );
-  }
-}
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+ReactDOM.render(<Body />, document.getElementById('root'));
 
 // Firebase 
 

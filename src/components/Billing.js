@@ -6,6 +6,7 @@
 const Billing = () => {
   return (
     <>
+    
       <div className ="billing-green-label">Crear Orden</div>
       <div className ="billing-container">
           <div className= "billing-white">
@@ -17,6 +18,7 @@ const Billing = () => {
             <div id= "items-order"> </div>
         </div>
       </div>
+  
     </> 
   );
 }

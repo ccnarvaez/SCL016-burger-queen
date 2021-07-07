@@ -1,20 +1,20 @@
 const data = [
     {
-        item:'Te Chai',
+        item:'Te Chai de la pradera',
         price: 5,
         id: '1-drinks',
         menu: 'drinks',
     },
 
     {
-        item:'Te Verde',
+        item:'Te Verde "La madriguera"',
         price: 2,
         id:'2-drinks',
         menu: 'drinks',
     },
 
     {
-        item:'Te Negro',
+        item:'Te Negro del jardín',
         price: 2,
         id: '3-drinks',
         menu: 'drinks',

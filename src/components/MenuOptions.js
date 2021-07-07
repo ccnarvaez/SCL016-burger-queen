@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom';
 import Food from './Food';
 import Drinks from './Drinks';
-import acompañantes from'../assets/acompañantes.jpg';
-import bebidas from'../assets/bebidas.jpg';
+import postres from'../assets/postres.jpg';
+import taza from'../assets/taza.jpg';
 
 // Food or drinks selection component
 
@@ -21,16 +21,24 @@ const showMenu2 = () => {
 const MenuOptions = () => {
 
   return(
+    <div className= "section-wrapper">
+      <div className = "drinks-food-menu">
+        <label className ="billing-green-label"> Elige tu menú </label>
+      </div>
       <div className = "menu-container2">
         <div className = "menu-wrapper">
-          <img src={bebidas} alt ="bebidas"className="menu-one" id="menu-one"></img>
+          <img src={taza} alt ="bebidas"className="menu-one" id="menu-one"></img>
           <button className = "menu-options1" onClick={showMenu1} > Bebidas </button>
         </div>
+        </div>
+        <div className = "menu-container2">
         <div className = "menu-wrapper">
-          <img src={acompañantes} alt ="acompañantes"className="menu-two"></img>
+          <img src={postres} alt ="acompañantes"className="menu-two"></img>
           <button className ="menu-options1" onClick={showMenu2}> Acompañantes </button>
         </div>
       </div>
+    </div>
+      
   )
 }
 

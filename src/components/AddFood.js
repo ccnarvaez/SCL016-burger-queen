@@ -2,47 +2,17 @@
 import {db} from '../index';
 let order = [];
 
-const Quantity = async (order) =>{
-
-    let batch = db.batch();
-    order.forEach((doc) => {
-        var docRef = db.collection("Order").doc(); //automatically generate unique id
-        batch.set(docRef, doc);
-      });
-
-      batch.commit();
-    // const item = document.getElementById('item-item').textContent;
-    // const quantity = document.getElementById('item-quantity').value;
-    // const price = document.getElementById('item-price').textContent;
-    // const payment = parseInt(price) * parseInt(document.getElementById('item-quantity').value);
-
-
-
-    // return(
-    //     await db.collection('Order').doc().set({
-    //         item,
-    //         quantity,
-    //         price,
-    //         payment
-    //       }).then(alert('Order going up!'))
-        
-    // )
-}
-
-const handleClick = () => {
-    console.log('Se hizo click');
-}
 
 const Pay = async () => {
 
     let batch = db.batch();
     order.forEach((doc) => {
-        let docRef = db.collection("Order").doc(); //automatically generate unique id
+        let docRef = db.collection("Order").doc(); 
         batch.set(docRef, doc);
     });
 
     batch.commit();
-    console.log('guarde');
+    console.log('enviado a firebase');
 }
 
 const AddFood = (props) => {
@@ -79,7 +49,7 @@ const AddFood = (props) => {
                 )
             })}   
         
-        <button  type="button"  className = "btn-gen" onClick={ handleClick() }> Pagar </button>
+        <button  type="button"  className = "btn-gen" onClick={ Pay }> Ordenar </button>
         </>   
     )
 }

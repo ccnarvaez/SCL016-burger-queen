@@ -15,12 +15,14 @@ const Drinks= () =>{
     
     return (
         <>
+        <div className="section-wrapper">
             <div className ="drinks-food-menu">
-                <h4> Menu de Bebidas </h4>
+                <label className ="billing-green-label"> Menu de Bebidas </label>
             </div>
+          </div>
             {drinks.map((chunk, index) => {
                 return (
-                  
+                <div className="section-wrapper"> 
                   <div className ="drinks-food-menu">
                     <div className = "drink-menu-options">
                       <ul key={index} > 
@@ -30,6 +32,7 @@ const Drinks= () =>{
                       </ul>  
                     </div>
                   </div>
+                </div>
             
                 )
             })}

@@ -23,7 +23,8 @@ code {
 }
 
 .billing-green-label {
-  background-color: #57E4AB;
+  background-color:white;
+  border: 2px solid #d4dfdd;
   display: flex;
   justify-content: center;
   font-size: larger;
@@ -50,6 +51,7 @@ code {
 
 .billing-white {
   background-color: white;
+  border: 2px solid #d4dfdd;
   height: inherit;
   width: fit-content;
 }
@@ -96,7 +98,7 @@ code {
   background-color: #065C4D;
   display: grid;
   grid-template-columns: 2(repeat, 1fr);
-  height: min-content;
+  height: fit-content;
 
 }
 
@@ -117,7 +119,6 @@ code {
   line-height: 3em;
   margin-bottom: 4em;
   width: inherit;
-
 }
 
 .header-wrapper {
@@ -138,9 +139,9 @@ code {
   background-color: white;
   border-radius: 0.5em;
   display: flex;
-  height: fit-content;
+  height: min-content;
   width: min-content;
-  margin: 0.5em;
+  margin: 1em;
   grid-column: 1;
 }
 
@@ -188,7 +189,12 @@ code {
   background-color: #065C4D;
   height: fit-content;
   width: min-content;
-  margin: 3em 4em 6em;
+  margin: 1em;
   border-radius: 0.5em;
 }
 
+.section-wrapper{
+  background-color:#0df7d0;
+  padding: 0.3em;
+  height: max-content;
+}
